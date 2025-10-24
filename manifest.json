@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "KaTeX Direction Fixer",
+    "version": "1.0",
+    "description": "Automatically fixes KaTeX direction for Hebrew text.",
+    "content_scripts": [
+      {
+        "matches": ["*://chat.openai.com/*", "*://chatgpt.com/*"],
+        "css": ["style.css"],
+        "run_at": "document_start"
+      }
+    ],
+    "permissions": ["scripting"]
+  }
